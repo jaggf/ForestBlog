@@ -4,7 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib prefix="rapid" uri="http://www.rapid-framework.org.cn/rapid" %>
-
+<%@ include file="../title.jsp"%>
     <rapid:override name="title">
         - 分类列表
     </rapid:override>
@@ -51,7 +51,7 @@
                     </div>
                     <br>
                     <div class="layui-input-block">
-                        父节点 <span style="color: #FF5722; ">*</span>
+                        <span title="<%=warn%>">父节点</span><span style="color: #FF5722; ">*</span>
                         <select name="categoryPid" class="layui-input" required>
                             <option value="0">无</option>
                             <c:forEach items="${categoryList}" var="c">

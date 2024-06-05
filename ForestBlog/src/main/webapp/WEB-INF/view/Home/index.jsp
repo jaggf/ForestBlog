@@ -76,6 +76,7 @@
                         </span>
                         <span class="entry-meta">
                             <span class="date">
+                                <i class="fa fa-clock-o" aria-hidden="true" /></i>
                                 <fmt:formatDate value="${a.articleCreateTime}" pattern="yyyy年MM月dd日"/>
                             &nbsp;&nbsp;
                             </span>
